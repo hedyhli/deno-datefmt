@@ -1,7 +1,7 @@
 # datefmt
 
 ```js
-import datefmt from "https://deno.land/datefmt/mod.ts"
+import datefmt from "https://deno.land/x/datefmt/mod.ts"
 ```
 
 - Similar to Golang's date(time) foramts, but delimiters around format
