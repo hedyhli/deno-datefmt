@@ -6,9 +6,9 @@
 import datefmt from "https://deno.land/x/datefmt/mod.ts"
 ```
 
-- Similar to Golang's date(time) foramts, but delimiters around format
+- Similar to Golang's date(time) formats, but delimiters around format
   specifiers are required. This makes formatting less ambiguous.
-- n-th date formats are supported
+- n-th day formats are supported
 - Capitalization and full-uppercasing are both supported
 
 The default delimiters are `[]`. Delimiters can either be open + close, or a
