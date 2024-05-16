@@ -1,5 +1,7 @@
 # datefmt
 
+[![Checks](https://github.com/hedyhli/deno-datefmt/actions/workflows/deno.yml/badge.svg)](https://github.com/hedyhli/deno-datefmt/actions/workflows/deno.yml)
+
 ```js
 import datefmt from "https://deno.land/x/datefmt/mod.ts"
 ```
