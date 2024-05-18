@@ -42,7 +42,7 @@ jobs:
         run: deno task test
 
       - name: Coverage
-        run: ./.coverage.py $(deno task test 2>&1 | tail -n1 | cut -d' ' -f4 | cut -d'.' -f 1 | grep -Eo '[0-9]+$')
+        run: ./.coverage.py $(deno coverage cov_profile --detailed 2>&1 | head -n1 | cut -d' ' -f4 | cut -d'.' -f 1 | grep -Eo '[0-9]+$')
 
       # Commit all changed files back to the repository
       - uses: stefanzweifel/git-auto-commit-action@v5

@@ -6,7 +6,7 @@ cov = int(sys.argv[1])
 
 color = "red"
 if cov > 90:
-    color = "green"
+    color = "2ebb4e"
 elif cov > 50:
     color = "yellow"
 
