@@ -1,7 +1,7 @@
 # datefmt
 
 [![Checks](https://github.com/hedyhli/deno-datefmt/actions/workflows/deno.yml/badge.svg)](https://github.com/hedyhli/deno-datefmt/actions/workflows/deno.yml)
-<!--deno-coverage-->https://img.shields.io/badge/Coverage-100%25-green
+![deno-coverage]()
 
 ```js
 import datefmt from "https://deno.land/x/datefmt/mod.ts"

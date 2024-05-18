@@ -10,7 +10,7 @@ if cov > 90:
 elif cov > 50:
     color = "yellow"
 
-image = f"![](https://img.shields.io/badge/Coverage-{cov}%25-{color})"
+image = f"![deno-coverage](https://img.shields.io/badge/Coverage-{cov}%25-{color})"
 
 found = False
 before = []
@@ -18,7 +18,7 @@ after = []
 
 with open("README.md") as f:
     for line in f.read().splitlines():
-        if line.startswith("<!--deno-coverage-->"):
+        if line.startswith("![deno-coverage]"):
             found = True
             continue
 
@@ -30,5 +30,5 @@ with open("README.md") as f:
 if found:
     with open("README.md", "w") as f:
         f.write("\n".join(before) + "\n")
-        f.write("<!--deno-coverage-->" + image + "\n")
+        f.write(image + "\n")
         f.write("\n".join(after) + "\n")
