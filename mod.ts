@@ -98,6 +98,10 @@ export const datefmt = (
           d = getWithUTC(date, 'Hours', utc) > 11 ? 'pm' : 'am';
           d = handleVariants(f, d);
           break;
+        case '015':
+          d = getWithUTC(date, 'Hours', utc).toString();
+          d = handleVariants('01', d);
+          break;
         case '1': case '01':
           d = handleVariants(f, (getWithUTC(date, 'Month', utc) + 1).toString());
           break;

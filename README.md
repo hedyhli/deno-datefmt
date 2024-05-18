@@ -79,6 +79,10 @@ Day
 Time
 - PM, Pm, pm
 - 3, 03
-- 15 (24-hour time)
+- 15 (24-hour time), 015
 - 4, 04
 - 5, 05
+
+Note, `"015"` is a special format for both 24-houur time and zero-padded. I.e.,
+if the time is 9 AM, "15" and "3" both gives "9", whereas "015" and "03" both
+gives "09".

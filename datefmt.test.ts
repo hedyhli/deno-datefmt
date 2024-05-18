@@ -30,10 +30,12 @@ Deno.test("nth", () => {
 });
 
 Deno.test("0hour", () => {
-  const d = new Date("Wed, 19 Feb 2020 16:00:00 GMT");
+  let d = new Date("Wed, 19 Feb 2020 16:00:00 GMT");
   assertEquals(datefmt(d, "[3]"), "4");
   assertEquals(datefmt(d, "[03]"), "04");
   assertEquals(datefmt(d, "[15]"), "16");
+  d = new Date("Wed, 19 Feb 2020 09:00:00 GMT");
+  assertEquals(datefmt(d, "[015] [15] [03] [3]"), "09 9 09 9");
 });
 
 Deno.test("am", () => {
