@@ -10,7 +10,7 @@ if cov > 90:
 elif cov > 50:
     color = "yellow"
 
-image = f"https://img.shields.io/badge/Coverage-{cov}%25-{color}"
+image = f"![](https://img.shields.io/badge/Coverage-{cov}%25-{color})"
 
 found = False
 before = []
