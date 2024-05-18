@@ -62,6 +62,10 @@ The standard date used is `Monday, January 2nd 03:04:05 PM 2006`
 
 Tip for memorising: `01/02 03:04:05 2006 (PM) (Monday)`
 
+Use any of the following format specifiers from within delimiters (by default,
+`[]`), and they will be replaced with the corresponding value from the Date
+object.
+
 Date
 - 2006, 06, 6
 - 01, 1
