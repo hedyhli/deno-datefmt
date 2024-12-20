@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "test": "rm -rf cov_profile; deno test --allow-read --coverage=cov_profile && deno coverage cov_profile --detailed"
+    "test": "rm -rf cov_profile; deno test --allow-read --coverage=cov_profile && deno coverage cov_profile --detailed",
+    "tsc": "tsc"
   },
   "imports": {
     "std/": "https://deno.land/std@0.205.0/"
